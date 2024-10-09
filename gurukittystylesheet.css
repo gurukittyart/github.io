@@ -1,0 +1,434 @@
+body {
+  background-color: rgb(191, 155, 173);
+  width: 100%;
+}
+nav {
+  background-color: rgb(191, 155, 173);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  
+}
+nav ul {
+  list-style-type: disc;
+  padding: none;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  padding-bottom: 36px;
+}
+nav ul li a {
+  color: rgb(81, 7, 44);
+  text-decoration: none;
+  font-family: fantasy;
+  text-align: center;
+}
+nav ul li a:hover {
+  color:rgb(203, 12, 155);
+}
+.dropdown {
+  display: none; 
+  position: absolute;
+}
+nav ul li:hover .dropdown{
+  display: block;
+}
+
+.website-title::before { content: ''; width: 100%; height: 2px; background-color: rgb(81, 7, 44); position: absolute; bottom: 20px; }
+.website-title {
+  position: relative; left: 50%; transform: translateX(-50%);
+  border: 6px solid rgb(81, 7, 44);
+  width: 60%;
+  padding-left: 66px;
+  padding-right: 66px;
+  font-display: center;
+  font-size: 60px;
+  color: rgba(63, 9, 35, 0.898);
+  font-family: "fantasy";
+}
+
+h1 {
+  position: relative; left: 50%; transform: translateX(-50%);
+  background-color: rgb(191, 155, 173);
+  font-family: fantasy;
+  font-size: 60px;
+  font-display: center;
+  position-anchor: center;
+  }
+
+.artist-bio > p {
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 1rem;
+  position: relative; transform: translateX(50%); left: -50%;
+  font-family: fantasy;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-top: 66px;
+  padding-bottom: 33px;
+  
+}
+.outer-frame {
+  width: 416px;
+  height: 566px;
+  border: 20px solid;
+  border-image-source: linear-gradient(to bottom, rgb(152, 108, 24), rgb(194, 118, 20));
+  border-image-slice: 1;
+  box-shadow: inset 0 0 10px rgba(93, 62, 11, 0.895);
+  box-sizing: content-box;
+  margin-left: 36%;
+  margin-right: 20%;
+  margin-bottom: 20px;
+   }
+
+.inner-frame {
+  width: 396px;
+  height: 546px;
+  margin: 0px;
+  border: 10px solid rgb(136, 31, 99);
+  position: relative; left: 50%; transform: translateX(-50%);
+ 
+}
+
+img {
+  width: 396px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pow-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: fantasy;
+  font-size: 24px;
+  color: rgb(43, 8, 35);
+  padding-bottom: 10px;
+  text-align: center;
+  height: calc(100vh -20px - 1rem);
+  margin: 0 auto;
+  max-width: 80%;
+  align-items: center;
+  padding: 0 20% 0 15%;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateX(38%);
+}
+
+.carousel {
+  position: center; margin-left: 3000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(163, 235, 211, 0.525); 
+  width: 400px;
+  height: 400px;
+}
+
+.fade {
+  display: none;
+}
+.fade:first-child {
+  display: none;
+  
+}
+.img.fade {
+  display: none; 
+  margin: 0 auto;
+}
+
+.img-container > p {
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+ }
+
+ .fadeOut{
+  animation: fadeOut 20s forwards;
+ }
+
+ @keyframes fadeOut {
+  0% {opacity: 1;} 100% {opacity: 0;}
+ }
+
+.img-container-forever {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+
+}
+ .img-container-bearhunter {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+ }
+
+ .img-container-dragon {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+ }
+
+ .img-container-bitcoin {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+ }
+ .img-container-2020 {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+ }
+ .img-container-nigerianprincess {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+ }
+ .img-container-hawkeyes {
+  box-shadow: 0 0 10px rgba(63, 9, 35, 0.898);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgb(191, 155, 173);
+  color: rgb(81, 7, 44);
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 66px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+ }
+
+ .inner-frame-forever {
+  width: 396px;
+  height: 546px;
+  margin: 0px;
+  border: 10px solid rgba(26, 3, 95, 0.438);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+ }
+ 
+ .inner-frame-dragon {
+  width: 396px;
+  height: 272px;
+  margin: 0px;
+  border: 10px solid rgba(24, 6, 76, 0.813);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+
+ }
+
+ .inner-frame-bearhunter {
+  width: 396px;
+  height: 523px;
+  margin: 0px;
+  border: 10px solid rgba(208, 102, 21, 0.844);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+ }
+
+ .inner-frame-bitcoin {
+  width: 396px;
+  height: 531px;
+  margin: 0px;
+  border: 10px solid rgba(25, 8, 65, 0.905);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+ }
+
+ .inner-frame-2020 {
+  width: 396px;
+  height: 518px;
+  margin: 0px;
+  border: 10px solid rgba(25, 8, 78, 0.903);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+ }
+ .inner-frame-hawkeyes {
+  width: 396px;
+  height: 306px;
+  margin: 0px;
+  border: 10px solid rgba(3, 21, 95, 0.438);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+ }
+ .inner-frame-nigerianprincess {
+  width: 396px;
+  height: 566px;
+  margin: 0px;
+  border: 10px solid rgba(28, 190, 117, 0.916);
+  position: relative; left: 50%; transform: translateX(-50%);
+  transition: opacity 10s;
+ }
+
+ .forever-buynow-button {
+  width: 66px;
+  height: 66px;
+  font-family: fantasy;
+  font-size: 20px;
+  color: rgb(81, 7, 44); 
+  position: relative; left: 50%; transform: translateX(-50%);
+  border: 20px;
+  border-radius: 100%;
+  background-color: rgba(58, 13, 100, 0.337);
+  margin-bottom: 60px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 33px;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+
+ .forever-buynow-button:hover {
+  color: aquamarine;
+ }
+ 
+ .forever-buynow-button:active  {
+  text-decoration: underline;
+ }
